@@ -9,10 +9,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <!--    <link href="//db.onlinewebfonts.com/c/00884e3dc954fcc592c35ed58e578e11?family=Intro+Book" rel="stylesheet" type="text/css"/>-->
 
-<!--    <link href="dist/css/animation.css" rel="stylesheet">-->
+   <link href="dist/css/main.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
+    <header class="w-100 position-fixed">
+        <div class="contact-info text-end">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="phone-number">
+                            (213) 894-9933
+                        </span>
+                        <span class="email">hello@nasrin.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 position-fixed navbar-fixed-top" id="navbar-top">
+            <div class="container ">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand logo" href="#"><img src="dist/img/spinx-logo.png" class="w-100" title="logo"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white menu-item" href="#">Work</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-white menu-item" href="#">Expertise</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link text-white menu-item" href="#">process</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link text-white menu-item " href="#">agency</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-white menu-item" href="#">resources</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-white contact-btn" href="#">contact</a>
+                            </li>
+                        </ul>
+                     </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="banner-img">
+            <div class="main-content">
+                BIG IDEAS,
+                <br>
+                CREATIVE PEOPLE,
+                <br>
+                NEW TECHNOLOGY.
+            </div>
+
+        </div>
+    </section>
+
 
 
 <script
@@ -20,5 +81,11 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('navbar-fixed-top-scroll', $(this).scrollTop() > $nav.height());
+    });
+</script>
 </body>
 </html>

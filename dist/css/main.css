@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+header {
+    z-index: 1;
+}
+.contact-info {
+    background-color: #2f2f35;
+    font-size: 12px;
+    color: #fff;
+    padding: 11px 0 10px;
+
+}
+/* .phone-number {
+    color: #fff;
+} */
+.phone-number:hover {
+    color: #b3d146;
+}
+.email {
+    color : #9b9b9b;
+}
+.email:hover {
+    color: #fff;
+    transition: .3s ease all;
+}
+.email:before {
+    content: "|";
+    position: relative;
+    margin-right: 5px;
+    color: #b3d146;
+    top: -1px;
+}
+
+/* navbar style */
+
+.menu-item{
+    color: #fff;
+    font-size: 14px;
+    font-family: proxima_nova_rgbold;
+    text-transform: uppercase;
+    padding: 0 22px!important;
+    line-height: 37px;
+    height: 36px;
+    display: inline-block;
+}
+.menu-item:hover {
+    color: #b2d338!important;
+    background: #2f2f35;
+}
+.nav div ul li {
+    margin-left: 2px;
+}
+.contact-btn {
+    color: #fff;
+    background: #b3d146;
+    padding: 0 22px!important;
+    line-height: 37px;
+    height: 36px;
+    display: flex;align-items: center;
+}
+.contact-btn:hover {
+    background: #2f2f35!important;
+    color: #fff!important;
+}
+.logo {
+    width: 136px;
+}
+.navbar-fixed-top-scroll {
+    background: #212125;
+}
+
+/*banner*/
+.banner-img {
+    /*background-image: url('');*/
+    background: url("../img/home-banner.jpg") no-repeat center top 38px;
+    width: 100%;
+    background-size: cover;
+    min-height: 730px;
+    border-bottom: 3px solid #b2d237;
+}
+.main-content {
+    width: 100%;
+    text-align: right;
+    margin: 260px 0 0 0;
+    font-family: proxima_nova_rgbold;
+    font-size: 106px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 90px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 676px) {
+    .banner-img {
+        background: url("../img/home-banner-mob.jpg") no-repeat center;
+        min-height: 600px;
+    }
+    .logo {
+        width: 120px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .main-content {
+        font-size: 36px;
+        margin: 38% 0 7%;
+    }
+}
+@media only screen and (max-width: 676px) and (min-width: 479px) {
+    .main-content {
+        font-size: 44px;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 678px) {
+    .main-content {
+        font-size: 43px;
+    }
+}
