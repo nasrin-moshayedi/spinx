@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow-x: hidden ;
 }
 header {
     z-index: 1;
@@ -78,8 +79,10 @@ header {
     background-size: cover;
     min-height: 730px;
     border-bottom: 3px solid #b2d237;
+    overflow: hidden;
 }
 .main-content {
+    overflow: hidden;
     width: 100%;
     text-align: right;
     margin: 260px 0 0 0;
@@ -92,6 +95,35 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(20px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(20px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
 }
 @media only screen and (max-width: 676px) {
     .banner-img {
@@ -118,3 +150,73 @@ header {
         font-size: 43px;
     }
 }
+
+.slider-container {
+    background: #181818;
+    padding: 130px 0;
+}
+.client {
+    width: 705px;
+    max-width: 705px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInUpSlider;
+    -webkit-animation-name: fadeInUpSlider;
+}
+.controls {
+    position: absolute;
+    right: 10%;
+    top: 2%;
+}
+.carousel-btn {
+    color: #b2d237;
+    padding: 7px 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #1b1b1b;
+}
+.carousel-btn:hover {
+    color: #b2d237;
+    /*border-color: #b2d237;*/
+    border-radius: 50%;
+    background: #1b1b1b;
+}
+.carousel-btn-deactive {
+    color: #4b5d06;
+}
+@keyframes fadeInUpSlider {
+    from {
+        transform: translate3d(20px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUpSlider {
+    from {
+        transform: translate3d(20px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+.slider-title {
+    color: #fff;
+    font-family: proxima_nova_rgbold;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-right: 130px;
+}
+/*
