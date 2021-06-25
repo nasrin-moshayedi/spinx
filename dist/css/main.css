@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova+Rgbold');
+
 body {
     margin: 0;
     overflow-x: hidden ;
@@ -86,15 +88,11 @@ header {
     width: 100%;
     text-align: right;
     margin: 260px 0 0 0;
-    font-family: proxima_nova_rgbold;
+    font-weight: bold;
     font-size: 106px;
     text-transform: uppercase;
     color: #fff;
     line-height: 90px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -155,16 +153,13 @@ header {
     background: #181818;
     padding: 130px 0;
 }
+.slider {
+    width: 112%;
+}
 .client {
     width: 705px;
     max-width: 705px;
     opacity: 0;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-name: fadeInUpSlider;
-    -webkit-animation-name: fadeInUpSlider;
 }
 .controls {
     position: absolute;
@@ -219,4 +214,45 @@ header {
     margin-bottom: 20px;
     padding-right: 130px;
 }
-/*
+.slider-title:hover {
+    color: #b2d426;
+}
+
+.think-text {
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 90px;
+    text-transform: uppercase;
+    /*font-family: proxima_nova_thbold;*/
+    /*margin-bottom: 30px;*/
+}
+.think-text span {
+    color: #b2d426;
+}
+.think-text h1 {
+    color: #fff;
+    /*font-family: proxima_nova_rgbold;*/
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 38px;
+    margin: 30px 0;
+}
+.think-text p {
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    max-width: 430px;
+}
+.think-text h3 {
+    color: #b2d426;
+    font-family: proxima_nova_rgbold;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin: 25px 0 0;
+}
