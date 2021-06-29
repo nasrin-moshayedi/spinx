@@ -288,6 +288,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 40px;
     position: relative;
+    z-index: 1;
 }
 .recent-work-title:after {
     background: #b2d426;
@@ -400,4 +401,93 @@ header {
 }
 .select-client-content {
     background: #1b1b1b;
+}
+
+.expertise-container {
+    background: #ececec;
+}
+.expertise-box {
+    height: 500px;
+    width: 370px;
+    padding: 40px 40px 90px!important;
+    background: #fff;
+    margin-top: 50px;
+}
+.expertise-box h2 {
+    color: #1b1b1b;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+}
+.expertise-box p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 29px;
+    color: #000;
+}
+.expertise-box a {
+    font-size: 14px;
+    color: #b1d237;
+    /*font-family: proxima_nova_rgbold;*/
+    text-transform: uppercase;
+    bottom: 68px;
+    left: 44px;
+    position: absolute;
+}
+.hover-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #000000a6;
+}
+.expertise-hover {
+    width: 370px;
+    height: 500px;
+    text-align: left;
+    bottom: 0;
+    top: auto;
+}
+.hover-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 20px;
+    color: #b1d237;
+    padding-left: 10px;
+}
+.expertise-hover ul {
+    padding-bottom: 1rem;
+    /*margin-bottom: 0;*/
+}
+.expertise-hover ul li h3 a {
+    text-decoration: none!important;
+    font-size: 14px;
+    color: #fff
+}
+.expertise-hover ul li h3 {
+    text-decoration: none!important;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.expertise-hover .img-hover {
+    text-align: left;
+}
+.learn-more {
+    background: 0 0;
+    border: 2px solid #b2d425;
+    /*font-family: proxima_nova_rgbold;*/
+    padding: 15px 30px;
+    font-size: 12px;
+    line-height: 16px;
+    height: auto;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 14px;
+}
+.learn-more:hover {
+    background: #b2d425;
+    color: #364200;
 }
