@@ -5,7 +5,7 @@ body {
     overflow-x: hidden ;
 }
 header {
-    z-index: 1;
+    z-index: 4;
 }
 .contact-info {
     background-color: #2f2f35;
@@ -14,9 +14,9 @@ header {
     padding: 11px 0 10px;
 
 }
-/* .phone-number {
+.white-text {
     color: #fff;
-} */
+}
 .phone-number:hover {
     color: #b3d146;
 }
@@ -156,6 +156,11 @@ header {
 .slider {
     width: 112%;
 }
+@media screen and (max-width: 768px) {
+    .slider {
+        width: 100%;
+    }
+}
 .client {
     width: 705px;
     max-width: 705px;
@@ -164,7 +169,7 @@ header {
 .controls {
     position: absolute;
     right: 10%;
-    top: 2%;
+    top: -2%;
 }
 .carousel-btn {
     color: #b2d237;
@@ -212,7 +217,8 @@ header {
     line-height: 17px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    padding-right: 130px;
+    /*padding-right: 130px;*/
+    width: fit-content;
 }
 .slider-title:hover {
     color: #b2d426;
@@ -224,6 +230,7 @@ header {
     letter-spacing: 0;
     line-height: 90px;
     text-transform: uppercase;
+    color: #fff;
     /*font-family: proxima_nova_thbold;*/
     /*margin-bottom: 30px;*/
 }
@@ -255,4 +262,139 @@ header {
     line-height: 17px;
     text-transform: uppercase;
     margin: 25px 0 0;
+}
+.slider-award {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    /* top: -72px; */
+    bottom: 0;
+    left: 37px;
+}
+
+
+/*recent-work*/
+.recent-work {
+    padding: 130px 0;
+}
+.recent-work-title {
+    color: #000;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+}
+.recent-work-title:after {
+    background: #b2d426;
+    content: '';
+    display: block;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    z-index: -1;
+}
+.img-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    padding: 17px;
+    color: #fff;
+    opacity: 0;
+    transition: .7s;
+    /*display: inline-block;*/
+    /* border: 1px solid; */
+    background: rgba(0,0,0,.7);
+}
+.img-hover:hover {
+    opacity: 1;
+}
+.hover-border {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    vertical-align: middle;
+    /*display: table-cell;*/
+}
+.hover-border h3{
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: .1em;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+}
+.hover-border p {
+    font-size: 18px;
+    color: #fff;
+    font-family: proxima_novalight;
+    margin-bottom: 23px;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+}
+.explore-btn {
+    background: rgba(0,0,0,.5);
+    border: 2px solid #b2d237;
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 32px;
+    height: 34px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    /*font-family: proxima_novasemibold;*/
+    letter-spacing: .1em;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    /*opacity: 0;*/
+    margin-top: 0;
+}
+.explore-btn:hover {
+    background: #b2d237;
+}
+.vertical-md {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 8% 0;
+}
+.show-more {
+    padding: 50px 0 30px;
+}
+.show-more button {
+    background: #b3d146;
+    color: #364200;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: .7s;
+
+}
+.show-more button:hover {
+    background: #2f2f35;
+    color: #fff;
+}
+
+.select-client {
+   color: #fff!important;
+    z-index: 1;
+}
+.select-client:after {
+   background: #585858!important;
 }
