@@ -398,3 +398,6 @@ header {
 .select-client:after {
    background: #585858!important;
 }
+.select-client-content {
+    background: #1b1b1b;
+}
